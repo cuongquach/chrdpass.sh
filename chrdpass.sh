@@ -6,8 +6,7 @@
 ## - Change pass user with password that user enter.
 ## - Change pass user with Random string has specific length.
 ##
-## Software : chpasswd
-## Link : https://live.vinahost.vn/img/130/chrdpass_sh.txt
+## Software name : /usr/bin/chpasswd
 
 
 ### Functions   ####
@@ -16,7 +15,7 @@
 help_manual()
 {
        clear
-	   cat << EOF
+cat << EOF
 Usage : 
 	   $0 [-h] [-u] <agrument1> [-p] <agrument2> [-m] <agrument3>
 
@@ -39,12 +38,12 @@ Examples :
         \$ $0 -u demo1 -m 15
         \$ $0 -u demo2 -p secretpass
 EOF
-	   exit 0
+	exit 0
 }
 
 usage()
 {
-clear
+	clear
         echo "- Invalid option, please check the syntax of command."
 cat << EOF
 Usage : 
@@ -52,11 +51,12 @@ Usage :
 
 Run "\$ $0 -h" for get help page. 
 EOF
-	   exit 0
+	exit 0
 }
 
 create_dict()
 {
+	## Generate dictionary character and number in Array ##
         COUNT=0
         for i in {a..z}
         do
