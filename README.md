@@ -21,10 +21,10 @@
 **+ Linux**
 
 ```sh
-# git clone https://github.com/cuongquach/chrdpass-linux.git chrdpass
-# mv chrdpass/chrdpass.sh /usr/bin/
-# chmod 700 /usr/bin/chrdpass && chown root:root /usr/bin/chrdpass
-# which chrdpass
+$ git clone https://github.com/cuongquach/chrdpass-linux.git chrdpass
+$ mv chrdpass/chrdpass.sh /usr/bin/
+$ chmod 700 /usr/bin/chrdpass && chown root:root /usr/bin/chrdpass
+$ which chrdpass
 /usr/bin/chrdpass
 ```
 
