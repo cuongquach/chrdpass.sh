@@ -6,8 +6,12 @@
 - Change password of user in Linux with strong random string then print out password on terminal for you.
 - Change password of user in Linux with strong random string has a specific length of string.
 - Change password of user with password that user want to use.
-- Default max length of random string is 12 characters.
-- Script create random string with the natural calculation, does not depend on any tool to create random pass.
+
+Default max length of random password is 12 characters.
+
+Script create random string with the natural logic calculation, does not depend on any tool to create random pass.
+
+Password will be encrypted with the algorithm SHA512 instead of MD5 which is default in Linux.
 
 
 ##Requirements
@@ -29,13 +33,44 @@ $ which chrdpass
 ```
 
 ##Example Usage
-###Options
+### Examples
+**Ex 1** : change password of a user with generated random pass.
+
+```sh
+$ chrdpass -u demo
+User : demo
+New pass: XVSGAg1ioBPF
+- Change password for user [demo]  SUCCESS. Exit
+```
+
+**Ex 2** : change password of a user with generated random pass that has a specific max length.
+
+```sh
+$ chrdpass -u demo -m 25
+User : demo
+New pass: dy4eNJCh6IP3y0i4dh148qsuh
+- Change password for user [demo]  SUCCESS. Exit
+```
+
+
+**Ex 3** : change password of a user with a string that user provide to script.
+
+```sh
+$ chrdpass -u demo -p secretpass
+User : demo
+New pass: secretpass
+- Change password for user [secretpass]  SUCCESS. Exit
+```
+
+ 
+
+####Options
 
 - **-u** : assign the name of user in Linux system that you want to change password. Script has function to check that user is avaiable or not.
 - **-m** : assign the number indicates max length of random password that script can generate in time. Default is : **12** .
 - **-p** : assign password input that sysadmin want to use instead of using random password from script.
 
-###Notice
+####Notice
 - The range of random password's max length is avaiable between 7 and 35 .
 - Do not use option **[-m]** with option **[-p]** .
 - Do not use 
@@ -44,4 +79,3 @@ $ which chrdpass
 **Name** : Quach Chi Cuong
 
 **Website** : https://cuongquach.com/
-
