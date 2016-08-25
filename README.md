@@ -62,6 +62,33 @@ New pass: secretpass
 - Change password for user [secretpass]  SUCCESS. Exit
 ```
 
+**Ex 4** : get the help page.
+
+```sh
+$ chrdpass -h
+Usage : 
+	   /usr/bin/chrdpass [-h] [-u] <agrument1> [-p] <agrument2> [-m] <agrument3>
+
+Option :
+        -u 	username of user in system that you want to change password.
+        -p 	the password input from user. If you dont want to user RANDOM password which created by \"0\"
+        -m 	max length of Random password which created by \"/usr/bin/chrdpass\"
+        -h 	help page
+
+Notice :
+        - You have to specific the user [-u] in agrument of command.
+        - Use option user [-u] only if you want to change password with RANDOM String.
+        - Default max length [-m] is 12.
+        - Option max length [-m] just use with option user [-u].
+        - Never use option password [-p] with [-m].
+        - Never use password [-p] with the length of it is shorter than 7 or greater than 35.
+
+Examples : 
+        $ /usr/bin/chrdpass -u demo1
+        $ /usr/bin/chrdpass -u demo1 -m 15
+        $ /usr/bin/chrdpass -u demo2 -p secretpass
+```
+
  
 
 ####Options
