@@ -25,7 +25,7 @@ Password will be encrypted with the algorithm SHA512 instead of MD5 which is def
 **+ Linux**
 
 ```sh
-$ git clone https://github.com/cuongquach/chrdpass-linux.git chrdpass
+$ git clone https://github.com/cuongquach/chrdpass.sh.git chrdpass
 $ mv chrdpass/chrdpass.sh /usr/bin/chrdpass
 $ chmod 700 /usr/bin/chrdpass && chown root:root /usr/bin/chrdpass
 $ which chrdpass
