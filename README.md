@@ -1,6 +1,6 @@
-#Shell script Linux - "chrdpass"
+# Shell script Linux - "chrdpass"
 
-##Description
+## Description
 'chrdpass' is a shell script that can help you with below three purposes :
 
 - Change password of user in Linux with strong random string then print out password on terminal for you.
@@ -14,7 +14,7 @@ Script create random string with the natural logic calculation, does not depend 
 Password will be encrypted with the algorithm SHA512 instead of MD5 which is default in Linux.
 
 
-##Requirements
+## Requirements
 
 - Tool 'chpasswd' need to be installed on Linux. Default Linux has it.
 - Privileges to run 'chpasswd' like root.
@@ -91,18 +91,18 @@ Examples :
 
  
 
-####Options
+#### Options
 
 - **-u** : assign the name of user in Linux system that you want to change password. Script has function to check that user is avaiable or not.
 - **-m** : assign the number indicates max length of random password that script can generate in time. Default is : **12** .
 - **-p** : assign password input that sysadmin want to use instead of using random password from script.
 
-####Notice
+#### Notice
 - The range of random password's max length is avaiable between 7 and 35 .
 - Do not use option **[-m]** with option **[-p]** .
 - Do not use 
 
-##Author
+## Author
 **Name** : Quach Chi Cuong
 
 **Website** : https://cuongquach.com/
